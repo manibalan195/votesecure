@@ -9,11 +9,10 @@ const server = http.createServer(app);
 
 initSocket(server);
 startCronJobs();
-
+app.get("/", (req, res) => {
+  res.send("✅ VoteSecure Backend is Live");
+});
 server.listen(PORT, () => {
   console.log(`\n🗳️  MSEC Election Portal — Server running`);
   console.log(`   http://localhost:${PORT}\n`);
-});
-app.get("/", (req, res) => {
-  res.send("✅ VoteSecure Backend is Live");
 });
