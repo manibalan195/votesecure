@@ -1,7 +1,6 @@
 -- MSEC Election Portal — Full Schema
 -- Run: mysql -u root -pbala719959 votesecure < server/schema.sql
 
-USE votesecure;
 
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS audit_log;
