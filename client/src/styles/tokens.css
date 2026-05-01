@@ -1,0 +1,52 @@
+:root {
+  /* MSEC Brand — Navy + Gold */
+  --primary:        #1a3a5c;
+  --primary-dark:   #102540;
+  --primary-light:  #EEF4FB;
+  --primary-text:   #0d2035;
+  --accent:         #E8A020;
+  --accent-light:   #FDF3E0;
+  --accent-dark:    #b07010;
+
+  /* Backgrounds */
+  --bg-page:    #F5F4F0;
+  --bg-card:    #FFFFFF;
+  --bg-surface: #EEECE6;
+
+  /* Borders */
+  --border:        rgba(0,0,0,0.10);
+  --border-subtle: #E0DED6;
+
+  /* Text */
+  --text-primary:   #1a1a18;
+  --text-secondary: #5a5955;
+  --text-hint:      #8a8880;
+
+  /* Status */
+  --success-bg:  #E1F5EE; --success-text: #085041;
+  --warning-bg:  #FDF3E0; --warning-text: #7a4f00;
+  --danger-bg:   #FCEBEB; --danger-text:  #791F1F;
+  --info-bg:     #EEF4FB; --info-text:    #1a3a5c;
+
+  /* Candidate avatar palette */
+  --av1-bg:#EEF4FB; --av1-c:#1a3a5c;
+  --av2-bg:#FDF3E0; --av2-c:#7a4f00;
+  --av3-bg:#E1F5EE; --av3-c:#085041;
+  --av4-bg:#FCEBEB; --av4-c:#791F1F;
+  --av5-bg:#EEEDFE; --av5-c:#3C3489;
+
+  /* Radius */
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-xl: 20px; --r-full: 9999px;
+
+  /* Layout */
+  --navbar-h: 64px;
+  --sidebar-w: 248px;
+  --max-w: 1120px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.09);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,0.12);
+
+  --transition: 0.15s ease;
+}
