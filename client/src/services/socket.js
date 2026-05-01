@@ -4,7 +4,10 @@ let socket = null;
 
 export function getSocket() {
   if (!socket) {
-    socket = io(window.location.origin, { autoConnect: false, withCredentials: true });
+    socket = io(import.meta.env.VITE_SOCKET_URL, {
+  autoConnect: false,
+  withCredentials: true
+});
   }
   return socket;
 }
