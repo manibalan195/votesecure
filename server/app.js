@@ -10,12 +10,12 @@ const allowedOrigins = [
   'http://localhost:5173',
   'https://votesecure-dfvaz9635-manibalan195s-projects.vercel.app',
   'https://votesecure-l1uyhm28l-manibalan195s-projects.vercel.app',
-  
+  'https://votesecure-ten.vercel.app'
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    if (!origin) return callback(null, true); // allow Postman / server calls
+    if (!origin) return callback(null, true); 
 
     if (allowedOrigins.includes(origin)) {
       return callback(null, true);
