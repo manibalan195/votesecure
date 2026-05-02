@@ -8,8 +8,7 @@ const app = express();
 app.use(helmet());
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://votesecure-dfvaz9635-manibalan195s-projects.vercel.app',
-  'https://votesecure-ten.vercel.app/'
+  'https://votesecure-dfvaz9635-manibalan195s-projects.vercel.app'
 ];
 
 app.use(cors({
