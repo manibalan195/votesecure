@@ -1,9 +1,16 @@
 import axios from 'axios';
 
+// In development: Vite proxies /api → localhost:5000
+// In production:  set VITE_API_URL=https://votesecure-6123.onrender.com in Vercel (no /api at the end)
+const baseURL = import.meta.env.VITE_API_URL
+  ? import.meta.env.VITE_API_URL.replace(/\/api\/?$/, '') + '/api'
+  : '/api';
+
 const api = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL}/api`,
+  baseURL,
   timeout: 20000,
   headers: { 'Content-Type': 'application/json' },
+  withCredentials: true,
 });
 
 api.interceptors.request.use(config => {
